@@ -1,6 +1,7 @@
 const request=require("request");
 const cheerio=require("cheerio");
-
+const getMatchDetails=require("./Match.js");
+//const 
 // const get_all_link=require("./Match");
 function get_all_link(AllMatchlink)
 {
@@ -20,7 +21,8 @@ function processData(html)
     for(let i=0;i<Allatag.length;i++)
     {
         let teamsLink="https://www.espncricinfo.com"+Allatag[i].attribs.href;
-        console.log(teamsLink);
+        //console.log(teamsLink);
+        getMatchDetails(teamsLink);
     }
 
 }

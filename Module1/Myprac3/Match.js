@@ -1,18 +1,33 @@
 const request=require("request");
 const cheerio=require("cheerio");
 const fs=require("fs");
-let matchlink="https://www.espncricinfo.com/series/ipl-2020-21-1210595/mumbai-indians-vs-chennai-super-kings-1st-match-1216492/full-scorecard";
+//const getMatchDetails = require("../../LEC5/Web_Scrapping_intro/Activity/Activity3");
+//let matchlink="https://www.espncricinfo.com/series/ipl-2020-21-1210595/mumbai-indians-vs-chennai-super-kings-1st-match-1216492/full-scorecard";
 let leaderboard = [];
 let countOfRequestSent=0;
+// let leaderboard = [];
+// let countOfRequestSent=0;
 
-request(matchlink,function(error,reponse,data)
-{
-    processData(data);
-    // console.log(data);
-    if(countOfRequestSent == 0){
-        console.table(leaderboard);
-    }
-})
+function getMatchDetails(teamLink){
+   // console.log("Sending Request " , countOfRequestSent);
+    request(teamLink , function(error , response , data){
+        //countOfRequestSent--;
+        processData(data);
+       // console.log("callback " , countOfRequestSent);
+        if(countOfRequestSent == 0){
+            console.table(leaderboard);
+        }
+    })
+    countOfRequestSent++;
+}
+// request(matchlink,function(error,reponse,data)
+// {
+//     processData(data);
+//     // console.log(data);
+//     if(countOfRequestSent == 0){
+//         console.table(leaderboard);
+//     }
+// })
 
 function processData(html)
 {
@@ -23,7 +38,7 @@ for(let i=0;i<B_Innings.length;i++)
     let oneInning=myDocument(B_Innings[i]);
     let teamName=oneInning.find("h5").text();
     teamName=teamName.split("INNINGS")[0].trim();
-    console.log(teamName);
+    //console.log(teamName);
     let Alltr=oneInning.find(".table.batsman tbody tr");
     for(let j=0;j<Alltr.length-1;j++)
     {
@@ -36,7 +51,7 @@ for(let i=0;i<B_Innings.length;i++)
            let fours=myDocument(Alltds[5]).text().trim();
            let sixes=myDocument(Alltds[6]).text().trim();
            let strike_rate=myDocument(Alltds[7]).text().trim();
-           console.log(`Batsman=${Batsman_Name} Runs=${runs} Balls=${balls} Fours=${fours} Sixes=${sixes} Strike_rate=${strike_rate}`);
+           //console.log(`Batsman=${Batsman_Name} Runs=${runs} Balls=${balls} Fours=${fours} Sixes=${sixes} Strike_rate=${strike_rate}`);
            processLeaderBoard(teamName , Batsman_Name, runs , balls , fours , sixes);
         }
        
@@ -80,3 +95,4 @@ function processLeaderBoard(teamName , Batsman_Name , runs , balls , fours , six
 
 }
 
+module.exports=getMatchDetails;
