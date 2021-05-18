@@ -11,7 +11,7 @@ let countOfRequestSent=0;
 function getMatchDetails(teamLink){
    // console.log("Sending Request " , countOfRequestSent);
     request(teamLink , function(error , response , data){
-        //countOfRequestSent--;
+        countOfRequestSent--;
         processData(data);
        // console.log("callback " , countOfRequestSent);
         if(countOfRequestSent == 0){
@@ -31,7 +31,7 @@ function getMatchDetails(teamLink){
 
 function processData(html)
 {
-let myDocument=cheerio.load(html);
+let myDocument=cheerio.load(html+"");
 let B_Innings=myDocument(".card.content-block.match-scorecard-table .Collapsible");
 for(let i=0;i<B_Innings.length;i++)
 {
