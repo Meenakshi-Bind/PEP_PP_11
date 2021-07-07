@@ -1,0 +1,22 @@
+{
+  "name": "WEB_Scrapping_intro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "fs.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.6",
+    "edge-paths": "^2.2.1",
+    "express": "^4.17.1",
+    "image-downloader": "^4.0.2",
+    "puppeteer": "^9.1.1",
+    "puppeteer-core": "^1.9.0",
+    "request": "^2.88.2",
+    "selenium-webdriver": "^4.0.0-beta.3"
+  }
+}
