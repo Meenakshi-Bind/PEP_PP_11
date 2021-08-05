@@ -1,0 +1,69 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+
+  
+  #root{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #202222d4;
+  }
+  .Calculator{
+    margin: 50px;
+    color:#ecf0f1;
+    background-color: #24272a;
+    border: 2px solid #c37777;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    height: 555px;
+    width: 375px;
+    align-items: center;
+  }
+  .OperationBtn button{
+    height:50px;
+    width: 50px;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 19px;
+    border: none;
+    border-radius: 9px;
+    outline: none;
+    background-color: #333333e8;
+    color: #72e3ff;
+  }
+  .Output-screen p {color:#ecf0f1}
+  .Output-screen{
+    border: 2px solid #cb3a5e;
+    height: 77px;
+    display: flex;
+    margin: 20px;
+    width: 300px;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px;
+  }
+  .input-btn{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+  }
+  .input-btn button{
+    background-color: #0000;
+    color: #f54747;
+    cursor: pointer;
+    height:50px;
+    width: 50px;
+    margin: 10px 20px 30px 40px;
+    align-self: center;
+  }
