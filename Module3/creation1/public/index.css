@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+#root{
+
+background-color: black;
+
+height: 753px;
+
+display: flex;
+
+justify-content: center;
+
+align-items: center;
+}
+.number button{
+
+padding: 23px;
+}
+
+.number{
+
+
+width: 327px;
+background-color: black;
+outline: solid #e03629;
+}
+
+p{
+  outline: auto;
+  height: 68px;
+  font-size: 27px;
+  color: #4288a9;
+  font-family: inherit;
+}
+button{
+width: 109px;
+height: 73px;
+color: crimson;
+background-color: black;
+}
+#clear{position: relative;left: 109px;}
