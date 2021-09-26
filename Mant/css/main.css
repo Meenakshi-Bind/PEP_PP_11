@@ -1,0 +1,361 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins|Comfortaa');
+:root{
+    --lightbgc:#202040;
+    --actc: #FFBD69;
+    --hoc: #FFBD69;
+    --bgc: #3C3C65;
+}
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; 
+  scroll-behavior: smooth;
+}
+body {
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Poppins', sans-serif;
+  background: var(--bgc);
+}
+
+/* Animation */
+
+@keyframes fadeInUp {
+  from {
+      transform: translate3d(0,40px,0)
+  }
+
+  to {
+      transform: translate3d(0,0,0);
+      opacity: 1
+  }
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+      transform: translate3d(0,40px,0)
+  }
+
+  to {
+      transform: translate3d(0,0,0);
+      opacity: 1
+  }
+}
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+  opacity: 0
+}
+
+.fadeInUp {
+  opacity: 0;
+  animation-name: fadeInUp;
+  -webkit-animation-name: fadeInUp;
+}
+
+/* Splash Screen */
+
+.splash {
+  background: linear-gradient(to top right, #202040 0%, #000000 100%);
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  display: none;
+
+}
+
+.avtar , .welcome , .input-name{
+  width: auto;
+  height: auto;
+  margin-top: 80px;
+}
+.avtar img {
+  position: relative;
+  width: auto;
+  margin: 0 auto;
+}
+
+.h3 {
+  color: white;
+  font-size: 18px;
+}
+
+.h1 {
+  color: #FFBD69;
+  font-size: 30px;
+}
+
+.one {
+  background-color: #000000;
+  width: 300px;
+  margin: 0 auto;
+  border: none;
+  border-radius: 22px;
+  height: 50px;
+  outline: none;
+  color: white;
+  padding: 20px;
+  font-size: 15px;
+  text-align: center;
+}
+.input-name{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.input-name .continue{
+  background-color: #Ffbd69;
+  color: white;
+  height: auto;
+  width: 40%;
+  margin: 0 auto;
+  border: none;
+  font-size: 18px;
+  border-radius: 20px;
+  padding: 12px 20px;
+  margin-top: 80px;
+}
+
+/* --------- */
+
+/* Header Content */
+.header{
+  background-color: var(--bgc);
+  display: flex;
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  align-items: center;
+  flex-direction: row;
+  align-items: center;
+}
+.header .left {
+  width: 20%;
+  padding: 10px 0;
+  text-align: center;
+}
+.header .left img{
+  width: 30px;
+}
+.header .right {
+  width: 20%;
+  padding: 10px 0;
+  text-align: center;
+}
+.header .mid {
+  width: 60%;
+  padding: 10px 0;
+  text-align: left;
+  font-family: 'Comfortaa', cursive; 
+  color: #fff;
+  font-size: 10px;
+}
+.header img{
+  width: 25px;
+}
+
+/* Boxed content */
+.box{
+  padding: 10px 0;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  margin-top: 60px;
+  margin-bottom: 70px;
+  background-color: var(--lightbgc);
+  height: 100%;
+}
+
+/* Footer content  */
+.icon-bar {
+  width: 100%;
+  max-height: 70px;
+  position: fixed;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  bottom: 0;
+  background-color: #202040;
+  overflow: hidden;
+}
+
+.icon-bar a {
+  width: 100%;
+  text-align: center;
+  padding: 010px 0;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 30px;
+}
+
+/* .icon-bar a:hover {
+  color: var(--hoc);
+}
+
+.active {
+   background-color: var(--actc);
+} */
+
+/* Card Styling */
+#beverages, #chinese, #soups, #deserts, #breads, #maincourse, #snacks{
+  padding-top: 60px;
+}
+.column , .column-r{
+  width: 100%;
+  text-align: center;
+  padding: 0px 12px;
+  display: block;
+  margin-bottom: 15px;
+}
+
+/* .row{
+  display: flex;
+  flex-wrap: wrap;
+} */
+
+.card {
+  max-width: 90vh;
+  height: 160px;
+  margin: 15px auto;
+  background-color: #131415;
+  border-radius: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 5px 5px 15px 0px rgba(47,49,49,0.6);
+-webkit-box-shadow: 5px 5px 15px 0px rgba(47,49,49,0.6);
+-moz-box-shadow: 5px 5px 15px 0px rgba(47,49,49,0.6);
+}
+.card-left{
+  width: 30%;
+  display: flex;
+  align-items: center;
+}
+.card-mid{
+  width: 40%;
+  display: table-cell;
+  vertical-align: middle;
+  margin: auto 0;
+}
+.card-right{
+  width: 30%;
+  color: white;
+  display: table-cell;
+  vertical-align: middle;
+  margin: auto 0;
+}
+.card img{
+  max-width: 130px;
+  
+}
+
+.size {
+  color: white;
+  font-size: 20px;
+  text-align: left;
+  margin-left: 10px;
+  margin-bottom: 5px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+
+.title {
+  color: grey;
+  font-size: 12px;
+  text-align: left;
+  margin-left: 10px;
+  margin-bottom: 15px;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+.Amount {
+  color: white;
+  font-size: 18px;
+  text-align: left;
+  margin-left: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+.heading{
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  padding-bottom: 15px;
+
+}
+
+/* Menu CSS */
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #FFBD69;
+}
+
+.closebtn {
+  /* size: 10px; */
+  font-size: 35px;
+      top: 15px;
+      left: 25px;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+@media screen and (min-width: 400px) {
+  .overlay a {
+      font-size: 20px;
+  }
+
+  .overlay .closebtn {
+      font-size: 35px;
+      top: 15px;
+      left: 25px;
+  }
+}
