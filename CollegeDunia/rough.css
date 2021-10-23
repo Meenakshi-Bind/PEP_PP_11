@@ -1,0 +1,444 @@
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons+Outlined");
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face{
+  font-family:'dinpro';
+  src: url("DinPro.otf");
+  font-weight: medium;
+}
+
+:root {
+  font-family: DINPro;
+  --white: #d8d8d8;
+  --pumpkin-orange: #ff7900;
+  --greyish: #b7b7b7;
+  --slate: #4d586c;
+  --brownish-grey: #666;
+  --dark-sky-blue: #4eb3d9;
+  --orange-yellow: #ffa100;
+  --blue-violet: #720dd8;
+  --white-two: #f4f4f4;
+  --marigold: #ffc100;
+  --pale-grey: #eff3f7;
+  --greyish-brown-9: rgba(68, 68, 68, 0.09);
+  --white-three: #fff;
+}
+
+ 
+.Text-Style-5 {
+  font-family: DINPro;
+  font-size: 1.156rem;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.97;
+  letter-spacing: normal;
+  text-align: left;
+  color: #444;
+}
+.Text-Style-2 {
+  font-family: DINPro;
+  font-size: 0.8rem;
+  font-weight: 700;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: center;
+  /* color: var(--white-three); */
+  /* color: #37b396; */
+}
+.Text-Style-4 {
+  font-family: DINPro;
+  font-size: 0.844rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: center;
+  color: #444;
+}
+.Text-Style-3 {
+  font-family: DINPro;
+  font-size: 0.844rem;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: left;
+  color: #444;
+}
+.Text-Style {
+  font-family: DINPro;
+  font-size: 0.563rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.44;
+  letter-spacing: normal;
+  color: var(--brownish-grey);
+}
+
+.Text-Style-1 {
+  font-family: DINPro;
+  font-size: 0.7rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.44;
+  letter-spacing: normal;
+  color: #4bb89e;
+}
+
+:root {
+  --spacing-xxs: 0.25rem;
+  --spacing-xs: 0.5rem;
+}
+.heading {
+    height: 1.125rem;
+    position: absolute;
+    margin: 0 18.813rem 3.313rem 0.313rem;
+    font-family: DINPro;
+    font-size: 1.156rem;
+    font-weight: 500;
+    font-stretch: normal;
+    /* font-style: inherit; */
+    line-height: 0.97;
+    letter-spacing: normal;
+    text-align: left;
+    color: #444;
+    left: 34px;
+    bottom: 633px;
+  }
+  
+
+.home {
+  display: flex;
+  padding: 3.0rem 1rem 2rem 1rem;
+  background-color: var(--white-three);
+  /* justify-content: flex-end; */
+  justify-content: space-around;
+}
+
+.college-block {
+  height: 26.563rem;
+  margin: 4.25rem 0rem 3.688rem 0;
+  padding: 0 0 0.625rem 0;
+  border-radius: 3.8px;
+  box-shadow: 0 0 19px 0 rgba(68, 68, 68, 0.1);
+  border: solid 0.2px rgb(204, 203, 203);
+  background-color: var(--white-three);
+  position: relative;
+}
+
+
+
+.image {
+  display: block;
+  width: 44.33rem;
+  height: 17.572rem;
+  filter: brightness(22%);
+}
+
+.college-name {
+  /* width: 16.25rem; */
+  height: 3.063rem;
+  font-size: 1.156rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.97;
+  letter-spacing: normal;
+  text-align: center;
+  color: #444;
+}
+
+.college-structure {
+  padding: 1rem;
+  font-size: 11px;
+}
+
+.Shape-1 {
+  width: 0.125rem;
+  height: 0.75rem;
+  margin: 0.625rem 0.375rem;
+  border: solid 0.4px #444;
+  background-color: #444;
+}
+
+.discount {
+  width: 22.8rem;
+  height: 2.5rem;
+  padding: 0.688rem 1.313rem 0rem 1.063rem;
+  background-color: #ccf5e7;
+  position: absolute;
+  border-radius: 0 2.5rem 2.5rem 0;
+  bottom: 4px;
+  left: 0;
+  text-align: center;
+}
+
+.discount-text {
+  width: 19.313rem;
+  height: 0.813rem;
+  font-family: DINPro;
+  font-size: 0.844rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: center;
+  color: #444;
+}
+
+.discount-text .Text-Style-2 {
+  font-weight: 500;
+}
+
+.discount-text .Text-Style-2 {
+  color: #4bb89e;
+}
+
+.discount-text .Text-Style-3 {
+  color: #1999d2;
+}
+
+.tag-one {
+  position: absolute;
+  top: 7.9rem;
+  left: 0.895rem;
+  margin: 6.688rem 0.438rem 0 0;
+  padding: 0.388rem 1rem 0.388rem 1.063rem;
+  border-radius: 50px;
+  background-color: var(--white-three);
+}
+
+.tag-one-text {
+  width: 6.25rem;
+  height: 0.813rem;
+  font-family: DINPro;
+  font-size: 0.9rem;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: left;
+  color: #444;
+
+
+}
+
+.tag-two {
+  position: absolute;
+  top: 7.9rem;
+  left: 11.195rem;
+  margin: 6.688rem 0.438rem 0 0;
+  padding: 0.388rem 1rem 0.388rem 1.063rem;
+  border-radius: 50px;
+  background-color: var(--white-three);
+}
+
+.tag-two-text {
+  width: 3.938rem;
+  height: 0.813rem;
+  font-family: DINPro;
+  font-size: 0.9rem;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: left;
+  color: #444;
+}
+
+.tag-three-text {
+  position: absolute;
+  top: 7.7rem;
+  left: 18rem;
+  margin: 7.375rem 0.063rem 0.825rem 10.938rem;
+  font-family: DINPro;
+  font-size: 0.95rem;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: left;
+  color:white;
+}
+
+.promoted-tag {
+   position: absolute;
+  top: -1.25rem;
+  right: 0rem;
+  clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 18% 50%, 0% 0%);
+  padding: 0.688rem 1.938rem 0.688rem 3rem;
+  background-color: #67a7ff; 
+  
+}
+
+.promoted-tag-text {
+  font-family: DINPro;
+  font-size: 0.938rem;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--white-three);
+  position: relative;
+}
+
+.rating-tag {
+  position: absolute;
+  right: 1rem;
+  top: 3rem;
+  margin: 0 0 6.688rem 18.75rem;
+  padding: 0.563rem;
+  border-radius: 3.8px;
+  background-color: #f5a626; 
+}
+
+.rating-tag-text {
+  font-family: DINPro;
+  font-size: 0.844rem;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--white-three);
+}
+
+.rating {
+  font-family: DINPro;
+  font-size: 1.356rem;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--white-three);
+}
+
+.discounted-price {
+  position: absolute;
+  right: 1rem;
+  top: 20rem;
+  /* font-family: MyriadPro; */
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.89;
+  letter-spacing: normal;
+  text-align: center;
+  color: #dd1c26;
+}
+
+.wants{
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  font-family: DINPro;
+  font-size: 1rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: center;
+  color: #37b396;
+}
+
+.fees {
+  position: absolute;
+  right: 1rem;
+  bottom: 4rem;
+  /* font-family: Myriad Pro; */
+  font-size: 0.688rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.64;
+  letter-spacing: normal;
+  text-align: center;
+  color: #444;
+}
+
+.original-price {
+  position: absolute;
+  right: 3.1rem;
+  bottom: 6.85rem;
+  font-family: DINPro;
+  font-size: 0.688rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.64;
+  letter-spacing: normal;
+  text-align: center;
+  color: #444;
+  text-decoration: line-through;
+}
+
+.discount-tag {
+    position: absolute;
+    right: 1.1rem;
+    bottom: 6.8rem;
+    margin-left: 2.5rem;
+    padding: 0.1rem 0.3rem 0.1rem 0.3rem;
+    font-size: 0.6rem;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.64;
+    width: 31px;
+    letter-spacing: normal;
+    text-align: center;
+    background-color: #dd1c26;
+    text-decoration: none;
+    clip-path: polygon(101% -1%, 101% 59%, 102% 77%, 27% 76%, 11% 40%, 29% 0%,34% -3%);
+    color: var(--white-three);
+}
+.paisa{
+  color: #37b395;
+}
+.paisa1{
+    color:#67a7ff;
+}
+.unchecked{
+  color: #43383861;
+}
+#text{
+  color: #aa9292;
+}
+#str{
+    font-size: 14px;
+}
+.checked{
+  
+  color: #444;
+}
+.nearest-place{
+  position: relative;
+  top: 11px;
+  font-size: 14px;
+}
+.nearest-places{
+  position: relative;
+  top: 3px;
+  font-size: 14px;
+}
