@@ -1,7 +1,7 @@
  
  setTimeout(function() {
     let OUTcheck=document.querySelectorAll("button.buttonOut");
-    console.log(OUTcheck.length+"dff")
+    // console.log(OUTcheck.length+"dff")
     for(let i=0;i<OUTcheck.length;i++)
     {
         OUTcheck[i].addEventListener("click",function(e){
@@ -25,7 +25,7 @@
             <td>${List[i].VehicleTYPE}</td>
             <td>${List[i].CheckINDate}</td>
             <td>${new Date().toLocaleString('en-US', { timeZone: 'Asia/Kolkata' })}</td>
-            <td>${(((new Date().getTime()-List[i].Duration)/1000)/60)/60}hrs</td>
+            <td>${Math.round((((new Date().getTime()-List[i].Duration)/1000)/60)/60)}hrs</td>
             </tr>`
             table2.append(telement2);
             table3.append(telement3);
@@ -48,8 +48,24 @@
  
  
  
+ //after the submission
  
- 
+ function myFunction() {
+    let input, filter, tr,th, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    tr = document.querySelectorAll("#myTR");
+    
+    for (i = 0; i < tr.length; i++) {
+        th = tr[i].getElementsByTagName("th");
+        txtValue = th[0].textContent;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            tr[i].style.display = "";
+        } else {
+            tr[i].style.display = "none";
+        }
+    }
+}
  
  
  
